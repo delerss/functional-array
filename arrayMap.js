@@ -25,3 +25,14 @@ function arrayMap(array) {
 
 var animalNames = arrayMap(Animals);
 console.log(animalNames);
+
+
+//combine map and filter to return the name of cat
+
+function nameCats(array) {
+    let cats = array.filter(animal => animal.species == "cat")
+        .map(name => name.name)
+    console.log(cats);
+}
+
+nameCats(Animals);
