@@ -19,3 +19,10 @@ function dogFunction(array) {
 }
 var dogs = dogFunction(Animals);
 console.log(dogs);
+
+function arrayFilter(array) {
+    let result = array.filter(dog => dog.species == "dog");
+    return result
+}
+var dogs = arrayFilter(Animals)
+console.log(dogs)
